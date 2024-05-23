@@ -16,5 +16,244 @@ body {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 24px;
+  row-gap: 48px;
+}
+
+#categories {
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  background-color: #f6f6fe;
+  list-style: none;
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+}
+
+.categories-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+.categories-list {
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding-left: 0;
+}
+.categories-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.categories-item {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 8px;
+}
+
+.input-title {
+  margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.input {
+  padding: 8px;
+  margin-bottom: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+/* task 4 */
+.form-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-text {
+  margin-bottom: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.form-text:nth-child(2) {
+  margin-bottom: 16px;
+}
+
+.form-input {
+  outline: none;
+  padding: 8px;
+  width: 360px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+.form-input:hover,
+.form-input:focus {
+  border: 1px solid #4e75ff;
+}
+
+.form-button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background: #4e75ff;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.form-button:hover,
+.form-button:focus {
+  background-color: #2e2f42;
+}
+
+/* task 5 */
+.widget-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.change-color {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  background: #4e75ff;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+/* task 6 */
+
+.controls {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: 104px;
+  background: #f6f6fe;
+}
+
+.controls-input {
+  outline: none;
+
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px;
+  width: 150px;
+  height: 40px;
+
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.button-create {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+
+  background: #4e75ff;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.button-destroy {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+
+  background: #ff4e4e;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.controls-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+
+  border-radius: 8px;
+  padding: 32px;
+
+  background: #f6f6fe;
 }
