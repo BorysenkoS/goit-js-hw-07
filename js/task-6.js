@@ -3,7 +3,6 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
-
 const controlsElem = document.querySelector('#controls');
 const inputElem = document.querySelector('input');
 const buttonCreateElem = document.querySelector('[data-create]');
@@ -18,20 +17,19 @@ buttonCreateElem.addEventListener('click', () => {
   }
 });
 
-let arr = [];
 function createBoxes(amount) {
+  let arr = [];
   for (let i = 0; i < amount; i++) {
     const boxElem = document.createElement('div');
     boxElem.style.width = `${30 + i * 10}px`;
     boxElem.style.height = `${30 + i * 10}px`;
     boxElem.style.backgroundColor = getRandomHexColor();
     arr.push(boxElem);
+    boxesElem.append(...arr);
   }
-  boxesElem.append(...arr);
 }
 
 function destroyBoxes() {
   boxesElem.innerHTML = '';
-  arr = [];
 }
 buttonDestroyElem.addEventListener('click', destroyBoxes);

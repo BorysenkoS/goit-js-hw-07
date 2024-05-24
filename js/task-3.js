@@ -4,7 +4,7 @@ console.log(inputElem);
 inputElem.addEventListener('input', onInputChange);
 function onInputChange() {
   const value = inputElem.value;
-  if (value.length < 0) {
+  if (value.trim().length === 0) {
     spanElem.textContent = 'Anonymous';
   } else {
     spanElem.textContent = value.trim();
