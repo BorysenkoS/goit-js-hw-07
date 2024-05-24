@@ -18,18 +18,20 @@ buttonCreateElem.addEventListener('click', () => {
   }
 });
 
-function destroyBoxes() {
-  boxesElem.innerHTML = '';
-}
-buttonDestroyElem.addEventListener('click', destroyBoxes);
-
+let arr = [];
 function createBoxes(amount) {
-  // boxesElem.innerHTML = '';
   for (let i = 0; i < amount; i++) {
     const boxElem = document.createElement('div');
     boxElem.style.width = `${30 + i * 10}px`;
     boxElem.style.height = `${30 + i * 10}px`;
     boxElem.style.backgroundColor = getRandomHexColor();
-    boxesElem.appendChild(boxElem);
+    arr.push(boxElem);
   }
+  boxesElem.append(...arr);
 }
+
+function destroyBoxes() {
+  boxesElem.innerHTML = '';
+  arr = [];
+}
+buttonDestroyElem.addEventListener('click', destroyBoxes);
