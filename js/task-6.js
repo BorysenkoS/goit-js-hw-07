@@ -12,6 +12,7 @@ const boxesElem = document.querySelector('#boxes');
 buttonCreateElem.addEventListener('click', () => {
   const amount = Number(inputElem.value);
   if (amount >= 1 && amount <= 100) {
+    boxesElem.innerHTML = '';
     createBoxes(amount);
     inputElem.value = '';
   }
@@ -25,8 +26,8 @@ function createBoxes(amount) {
     boxElem.style.height = `${30 + i * 10}px`;
     boxElem.style.backgroundColor = getRandomHexColor();
     arr.push(boxElem);
-    boxesElem.append(...arr);
   }
+  boxesElem.append(...arr);
 }
 
 function destroyBoxes() {
